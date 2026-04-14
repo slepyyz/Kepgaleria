@@ -12,16 +12,14 @@ export default class Kep {
     }
 
     megjelenit() {
-        let kod = `<div class="kartya">
+        let kod = `<div class="kiskep">
             <img src="${this.#obj.src}" alt="${this.#obj.cim}">
-            <h3>${this.#obj.cim}</h3>
-            <p>${this.#obj.leiras}</p>
-        </div>`;
+        </div>`; 
         this.szuloElem.insertAdjacentHTML("beforeend", kod);
     }
 
     esemenykezelo() {
-        let kepElem = document.querySelector(".kartya:last-child");
+        let kepElem = document.querySelector(".kiskep:last-child");
         kepElem.addEventListener("click", (event) => {
             this.kivalaszt();
         });

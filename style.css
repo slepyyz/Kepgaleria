@@ -13,10 +13,26 @@
 
 .kartyatarto{
     display: flex;
+    margin: auto;
+    width: 30%;
+    flex-wrap: wrap;
 }
 
 .kivalasztott{
     box-shadow: 10px 10px;
     margin: 0px 20px 20px 0px;
     width: 350px;
+}
+
+.kiskep img{
+    width: 150px;
+    height: 150px;
+}
+
+.kiemelt{
+    width: fit-content;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
